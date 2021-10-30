@@ -1,21 +1,9 @@
 const routes = require("express").Router();
+const userController = require("./controller/userController");
+const userControle = require("./controller/userController");
 
-routes.get("/", (request, response) => {
-  response.send("Fabi!");
-});
 
-routes.get("/jobs", (request, response) => {
-  response.send("List of jobs");
-});
+routes.get("/users", userController.list);
 
-routes.post("/jobs", (request, response) => {
-    console.log(request.body)
-  response.send("List of jobs2");
+module.exports = routes
 
-  });
-
-routes.get("/test", (request, response) => {
-    response.send("List of jobs");
-  });
-
-module.exports = routes;
