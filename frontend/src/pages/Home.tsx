@@ -1,12 +1,11 @@
 import { Button } from '@mui/material'
 import React from 'react'
-import JobList from '../components/JobList'
+import Header from '../components/Header'
 
 const Home = () => {
     return (
         <div>
-            <JobList/>
-            <Button>Btn test</Button>
+            <Header />
         </div>
     )
 }
